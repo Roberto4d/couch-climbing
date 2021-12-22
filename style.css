@@ -1,0 +1,211 @@
+body {
+    background-color: #0E3B43;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.container-fluid {
+    background-color: #357266;
+}
+
+a {
+    color: #fff;
+    text-decoration:none;
+    margin-left: 40px;
+    }
+.nav-link1 {
+    padding-left: 90px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.main{
+        margin-top: 255px;
+        text-align: center;
+    }
+
+.btn-outline-success {
+    color: #000 ;
+    background-color:#E0FE9C;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    margin-right: 30px;
+    padding: 5px 40px;
+    border-radius: 8px;
+}
+
+.header li {
+    display: inline;
+    margin: 0 10px;
+}
+.header ul {
+    padding: 0;
+}
+.header .navbar {
+    width: 10%;
+    text-align: center;
+}
+
+/* Primera parte de la introduccion en flex*/
+
+.flex-container{
+    display: flex;
+    background-color: #0E3B43;
+    padding: 0;
+    align-items: center;
+}
+
+.flex-container .comparte {
+   padding: 5%;
+   flex: 1;
+}
+
+.flex-container .comparte h1 {
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.comparte h4 {
+    color: #E0FE9C;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.comparte .boton1 {
+    color: rgb(0, 0, 0);
+    background-color: #E0FE9C;
+    font-family:'Staatliches', cursive;
+    font-size: 21px;
+    border: none;
+    margin-left: 60px;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+
+.flex-container .imagen {
+    width: 35%;
+}
+
+.imagen .imagen1{
+    width: 100%;
+}
+
+/* segunda parte de la introduccion en grid*/
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    margin: 10%
+}
+
+ .caracteristicas .caracteristica-principal {
+     grid-area: 1 / 1 / 2 / 4;
+     padding: 15%;
+}
+
+.caracteristicas .caracteristica-principal  h2{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+.caracteristicas .caracteristicas-carta1 {
+    border-radius: 8px;
+    background-color: #E0FE9C;
+    grid-area: 2 / 1 / 3 / 2;
+}
+.caracteristicas .caracteristicas-carta1 h4 {
+    font-size: 30px;
+    text-align: center;
+    color:#0E3B43;
+    font-family: 'Staatliches', cursive;
+}
+.caracteristicas .caracteristicas-carta1 .caracteristicas-contenido-imagen{
+    text-align: center;
+    padding: 10%;
+}
+
+.caracteristicas .caracteristicas-carta1 p {
+    font-size: 20px;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+
+.caracteristicas .caracteristicas-carta2 {
+    border-radius: 8px;
+    background-color: #E0FE9C;
+    grid-area: 2 / 2 / 3 / 3;
+}
+.caracteristicas .caracteristicas-carta2 h4 {
+    font-size: 30px;
+    text-align: center;
+    color: #0E3B43;
+    font-family: 'Staatliches', cursive;
+}
+
+.caracteristicas .caracteristicas-carta2 .caracteristicas-contenido-imagen{
+    text-align: center;
+    padding: 10%;
+}
+
+.caracteristicas .caracteristicas-carta2 p {
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
+
+
+.caracteristicas .caracteristicas-carta3 {
+    border-radius: 8px;
+    background-color: #E0FE9C;
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.caracteristicas .caracteristicas-carta3 h4 {
+    font-size: 30px;
+    text-align: center;
+    color: #0E3B43;
+    font-family: 'Staatliches', cursive;
+}
+
+.caracteristicas .caracteristicas-carta3 .caracteristicas-contenido-imagen{
+    text-align: center;
+    padding: 10%;
+}
+
+.caracteristicas .caracteristicas-carta3 p {
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    font-family: 'DM Sans', sans-serif;
+}
