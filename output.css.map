@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"output.css"}
+{"version":3,"sourceRoot":"","sources":["sass/main.scss","sass/_global.scss"],"names":[],"mappings":"AAII;EACI;EACA;EACA;EACA;;AAEJ;EACI,aCFM;EDGN,OCXK;EDYL;;AAEJ;EACI,aCRI;EDSJ,OCfA;EDgBA;;AAEJ;EACI;;AAEJ;EACI;EACA;EACA","file":"output.css"}

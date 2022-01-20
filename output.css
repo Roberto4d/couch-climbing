@@ -1,3 +1,26 @@
-
+.cards .card {
+  margin-left: 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+}
+.cards .card-title {
+  font-family: "Staatliches", cursive;
+  color: #0E3B43;
+  font-size: 40px;
+}
+.cards .card-city {
+  font-family: "DM Sans", sans-serif;
+  color: #357266;
+  font-size: 17px;
+}
+.cards .card-text {
+  font-size: 20px;
+}
+.cards .carousel-inner {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-height: 300px;
+}
 
 /*# sourceMappingURL=output.css.map */

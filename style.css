@@ -10,7 +10,7 @@ body {
     background-color: var(--color-verdeobscuro);
     margin:0;
     font-family: 'DM Sans', sans-serif;
-    font-size: 25px;
+   
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -94,8 +94,7 @@ a {
     font-size: 28px;
     margin-bottom: 30px;
 }
-
- button {
+.boton1 {
     color: var(--color-verdeclaro);
     background-color: transparent;
     font-family:'Staatliches', cursive;
@@ -106,17 +105,16 @@ a {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
+
+    border-color: var(--color-verde);
+    box-shadow: 0 0 40px 40px var(--color-verde) inset;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 button:focus{
     outline: 0;
 }
-.boton1 {
-    border-color: var(--color-verde);
-    box-shadow: 0 0 40px 40px var(--color-verde) inset;
-    transition: box-shadow 0.2s ease-in-out;
 
-}
 .boton1:hover {
     box-shadow: 0 0 10px 0 var(--color-verdeobscuro) inset, 0 0 10px 4px var(--color-verdeclaro);
 }
