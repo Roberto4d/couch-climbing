@@ -4,23 +4,31 @@
   border: none;
   font-size: 17px;
 }
-.cards .card-title {
+.cards .card .carousel-inner {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-height: 300px;
+}
+.cards .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.cards .card .card-body .card-title {
   font-family: "Staatliches", cursive;
   color: #0E3B43;
   font-size: 40px;
 }
-.cards .card-city {
+.cards .card .card-body .card-city {
   font-family: "DM Sans", sans-serif;
   color: #357266;
   font-size: 17px;
 }
-.cards .card-text {
+.cards .card .card-body .card-text {
   font-size: 20px;
 }
-.cards .carousel-inner {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  max-height: 300px;
+.cards .card .card-body .cards-button {
+  align-items: center;
+  background-color: #0E3B43;
 }
 
 /*# sourceMappingURL=output.css.map */
