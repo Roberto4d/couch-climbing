@@ -2,6 +2,26 @@
 
 @use 'global' as *;
 
+@mixin for-phone-only {
+    @media (max-width: 425px) { @content; }
+  }
+//para tablet
+@mixin for-tablet-portrait-up {
+    @media (min-width: 426px) { @content; }
+  }
+//para laptop girando
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+//para laptop
+@mixin for-desktop-up {
+    @media (min-width: 1270px) { @content; }
+  }
+//para escritorio
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+
 //titulo cards
 .home-walls {
     display: flex;
@@ -29,6 +49,9 @@
         border-radius: 8px;
         border: none;
         font-size: 17px;
+        @include for-tablet-portrait-up{
+            margin-left: 10px;
+        }
         .carousel-inner{
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;

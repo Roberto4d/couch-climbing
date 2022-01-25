@@ -5,6 +5,22 @@
 @mixin for-phone-only {
   @media (max-width: 425px) { @content; }
 }
+//para tablet
+@mixin for-tablet-portrait-up {
+  @media (min-width: 426px) { @content; }
+}
+//para laptop girando
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+//para laptop
+@mixin for-desktop-up {
+  @media (min-width: 1270px) { @content; }
+}
+//para escritorio
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
 
 .lema {
   display: flex;

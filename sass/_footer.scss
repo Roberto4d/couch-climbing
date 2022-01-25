@@ -5,7 +5,22 @@
 @mixin for-phone-only {
     @media (max-width: 425px) { @content; }
   }
-
+//para tablet
+@mixin for-tablet-portrait-up {
+    @media (min-width: 426px) { @content; }
+  }
+//para laptop girando
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+//para laptop
+@mixin for-desktop-up {
+    @media (min-width: 1270px) { @content; }
+  }
+//para escritorio
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
 .footer{
     margin: 20px;
     display: grid;
@@ -19,6 +34,10 @@
         align-items: center;
     }
     .ft {
+    @include for-big-desktop-up{
+        display: flex;
+        justify-content: center;
+    }
         img{
             max-width: 200px;
         }
@@ -31,6 +50,9 @@
         align-items: flex-end;
         @include for-phone-only{
             align-items: center;
+        }
+        @include for-big-desktop-up{
+            align-items:center;
         }
 
         .all-rights{

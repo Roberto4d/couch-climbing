@@ -2,13 +2,29 @@
 @use 'global' as *;
 //buttons
 @use 'global' as *;
-
+//para movil
 @mixin for-phone-only {
     @media (max-width: 425px) { @content; }
-  }  
-
+  }
+//para tablet
+@mixin for-tablet-portrait-up {
+    @media (min-width: 426px) { @content; }
+  }
+//para laptop girando
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+//para laptop
+@mixin for-desktop-up {
+    @media (min-width: 1270px) { @content; }
+  }
+//para escritorio
+@mixin for-big-desktop-up {
+    @media (min-width: 2800px) { @content; }
+  }
 
 .flex-container {
+    
     display: grid;
     margin-top: 9%;
     background-color: $dark-green;
@@ -16,11 +32,45 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
     @include for-phone-only{
         display: flex;
         flex-direction: column;
         margin-top: 150px;
     }
+    @include for-tablet-portrait-up{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    @include for-tablet-landscape-up{
+        display: grid;
+        margin-top: 11%;
+        background-color: $dark-green;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    @include for-desktop-up{
+        display: grid;
+        margin-top: 9%;
+        background-color: $dark-green;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    @include for-desktop-up{
+        display: grid;
+        margin-top: 5%;
+        background-color: $dark-green;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
 
     .comparte{
         display: flex;
@@ -36,6 +86,15 @@
             @include for-phone-only{
                font-size: 30px;
             }
+            @include for-tablet-portrait-up{
+                font-size: 50px;
+            }
+            @include for-desktop-up{
+                font-size: 65px;
+            }
+            @include for-desktop-up{
+                font-size: 70px;
+            }
         }
         h4 {
             color: $light-green;
@@ -45,14 +104,20 @@
             @include for-phone-only{
                 font-size: 20px;
              }
+             @include for-tablet-portrait-up{
+                font-size: 30px;
+            }
+            @include for-desktop-up{
+                font-size: 45px;
+            }
+            @include for-desktop-up{
+                font-size: 50px;
+            }
         }
     }
     .imagen {
         img{
             width: 100%;
-            @include for-phone-only{
-                width: 100%;
-            }
         }
     }
 }
