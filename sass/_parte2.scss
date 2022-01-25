@@ -2,6 +2,10 @@
 @use 'global' as *;
 
 /* parte dos lema */
+@mixin for-phone-only {
+  @media (max-width: 425px) { @content; }
+}
+
 .lema {
   display: flex;
   justify-content: center;
@@ -11,5 +15,8 @@
     color: $light-green;
     font-family: $font-button;
     text-align: center;
+    @include for-phone-only{
+      font-size: 30px;
+    }
   }
 }

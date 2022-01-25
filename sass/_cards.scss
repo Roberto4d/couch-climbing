@@ -18,7 +18,7 @@
         color: $light-green;
         font-family: $font-title;
         font-size: 28px;
-        margin-bottom: 30px;
+        margin: 30px;
     }
 }
 //Carts with carrousel
@@ -32,7 +32,7 @@
         .carousel-inner{
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            max-height: 320px;
+            max-height: 280px;
         }
         .card-body{
             display: flex;

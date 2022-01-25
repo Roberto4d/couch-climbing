@@ -27,18 +27,6 @@
 
 @use 'footer' as *;
 
-$breakpoints: (
-    sm : 425px,
-    md : 768px,
-    lg : 1440px,
-    xl : 1955px,
-);
-
-@mixin media-up($breakpoint) {
-    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
-        @content;
-    }
-}
 
 body {
     background-color: $dark-green;

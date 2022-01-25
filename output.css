@@ -83,6 +83,13 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+@media (max-width: 425px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+}
 .flex-container .comparte {
   display: flex;
   padding: 5%;
@@ -96,14 +103,29 @@
   font-weight: 900;
   font-size: 65px;
 }
+@media (max-width: 425px) {
+  .flex-container .comparte h1 {
+    font-size: 30px;
+  }
+}
 .flex-container .comparte h4 {
   color: #E0FE9C;
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
   margin-bottom: 30px;
 }
+@media (max-width: 425px) {
+  .flex-container .comparte h4 {
+    font-size: 20px;
+  }
+}
 .flex-container .imagen img {
   width: 100%;
+}
+@media (max-width: 425px) {
+  .flex-container .imagen img {
+    width: 100%;
+  }
 }
 
 /* parte dos lema */
@@ -118,6 +140,11 @@
   font-family: "Staatliches", cursive;
   text-align: center;
 }
+@media (max-width: 425px) {
+  .lema .lema1 {
+    font-size: 30px;
+  }
+}
 
 .caracteristicas {
   display: grid;
@@ -125,6 +152,12 @@
   grid-template-rows: 1fr;
   column-gap: 40px;
   margin: 10%;
+}
+@media (max-width: 425px) {
+  .caracteristicas {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .caracteristicas .caracteristicas-contenido {
   display: flex;
@@ -134,6 +167,11 @@
   border-radius: 8px;
   background-color: #357266;
   transition: 0.3s;
+}
+@media (max-width: 425px) {
+  .caracteristicas .caracteristicas-contenido {
+    margin-bottom: 20px;
+  }
 }
 .caracteristicas .caracteristicas-contenido h4 {
   font-size: 30px;
@@ -170,7 +208,7 @@
   color: #E0FE9C;
   font-family: "DM Sans", sans-serif;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .cards {
@@ -185,7 +223,7 @@
 .cards .card .carousel-inner {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  max-height: 320px;
+  max-height: 280px;
 }
 .cards .card .card-body {
   display: flex;
@@ -217,6 +255,12 @@
   grid-column-gap: 20px;
   grid-row-gap: 0px;
 }
+@media (max-width: 425px) {
+  .flex-container-cta {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .flex-container-cta .agrega-muro {
   background-image: url("Assets/tension.png");
   background-repeat: no-repeat;
@@ -226,18 +270,31 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media (max-width: 425px) {
+  .flex-container-cta .agrega-muro {
+    padding-top: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
 }
 .flex-container-cta .agrega-muro .agrega {
   font-family: "Staatliches", cursive;
   color: #fff;
   font-size: 60px;
 }
+@media (max-width: 425px) {
+  .flex-container-cta .agrega-muro .agrega {
+    font-size: 40px;
+  }
+}
 .flex-container-cta .agrega-muro .agrega-un {
   font-family: "DM Sans", sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 .flex-container-cta .agrega-muro .cta-button {
   font-size: 25px;
@@ -256,18 +313,31 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media (max-width: 425px) {
+  .flex-container-cta .busca-muro {
+    padding-top: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
 }
 .flex-container-cta .busca-muro .busca {
   font-family: "Staatliches", cursive;
   color: #fff;
   font-size: 60px;
 }
+@media (max-width: 425px) {
+  .flex-container-cta .busca-muro .busca {
+    font-size: 40px;
+  }
+}
 .flex-container-cta .busca-muro .busca-un {
   font-family: "DM Sans", sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 .flex-container-cta .busca-muro .cta-button {
   font-size: 25px;
@@ -285,6 +355,13 @@
   grid-column-gap: 20px;
   grid-row-gap: 0px;
 }
+@media (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer .ft img {
   max-width: 200px;
 }
@@ -294,9 +371,15 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+@media (max-width: 425px) {
+  .footer .copyright {
+    align-items: center;
+  }
+}
 .footer .copyright .all-rights p {
   font-family: "DM Sans", sans-serif;
   color: #fff;
+  font-size: 13px;
 }
 
 body {

@@ -4,6 +4,10 @@
 //buttons
 @use 'buttons' as *;
 
+@mixin for-phone-only {
+    @media (max-width: 425px) { @content; }
+  }
+
 .flex-container-cta{
     margin: 20px;
     display: grid;
@@ -11,6 +15,10 @@
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
+    @include for-phone-only{
+        display: flex;
+        flex-direction: column;
+    }
 
     .agrega-muro{
         background-image: url("Assets/tension.png");
@@ -21,19 +29,28 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        @include for-phone-only{
+          padding-top: 300px;
+          padding-left: 30px;
+          padding-right: 30px;
+          margin-bottom: 20px;
+        }
 
         .agrega{
             font-family: $font-button;
             color: $white;
             font-size: 60px;
+            @include for-phone-only{
+                font-size: 40px;
+            }
         }
 
         .agrega-un{
             font-family: $font-title;
             color: $white;
-            font-size: 20px;
+            font-size: 25px;
         }
         .cta-button{
             font-size: 25px;
@@ -54,19 +71,28 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        @include for-phone-only{
+            padding-top: 300px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 20px;
+          }
 
         .busca{
         font-family: $font-button;
         color: $white;
         font-size: 60px;
+        @include for-phone-only{
+            font-size: 40px;
+        }
         }
 
         .busca-un{
             font-family: $font-title;
             color: $white;
-            font-size: 20px;
+            font-size: 25px;
         }
         .cta-button{
             font-size: 25px;
