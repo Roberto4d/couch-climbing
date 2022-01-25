@@ -1,0 +1,80 @@
+//varibles
+@use 'global' as *;
+
+//buttons
+@use 'buttons' as *;
+
+.flex-container-cta{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+
+    .agrega-muro{
+        background-image: url("Assets/tension.png");
+        background-repeat: no-repeat;
+        display: flex;
+        padding-top: 550px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .agrega{
+            font-family: $font-button;
+            color: $white;
+            font-size: 60px;
+        }
+
+        .agrega-un{
+            font-family: $font-title;
+            color: $white;
+            font-size: 20px;
+        }
+        .cta-button{
+            font-size: 25px;
+            color: $light-green;
+            background-color: transparent;
+            border-color: transparent;
+            text-decoration: underline;
+        }
+    }
+
+    .busca-muro {
+        background-image: url("Assets/homewall.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        padding-top: 550px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .busca{
+        font-family: $font-button;
+        color: $white;
+        font-size: 60px;
+        }
+
+        .busca-un{
+            font-family: $font-title;
+            color: $white;
+            font-size: 20px;
+        }
+        .cta-button{
+            font-size: 25px;
+            color: $light-green;
+            background-color: transparent;
+            border-color: transparent;
+            text-decoration: underline;
+        }
+    }
+
+}

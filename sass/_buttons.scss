@@ -1,0 +1,50 @@
+//varibles
+@use 'global' as *;
+
+//main buttons
+.btn1{
+    color: $light-green;
+    background-color: transparent;
+    font-family: $font-button;
+    font-size: 23px;
+    border: 2px solid;
+    margin: 0 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: $green;
+    box-shadow: 0 0 40px 40px $green inset;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.btn1:focus{
+    outline: 0;
+}
+.btn1:hover{
+    box-shadow: 0 0 10px $dark-green inset, 0 0 15px 10px $light-green;
+  }
+
+//cards buttons
+
+.cards-button {
+    color: $white;
+    background-color: transparent;
+    font-family: $font-button;
+    font-size: 18px;
+    border: 2px solid;
+    margin: 0 0;
+    padding: 5px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: $dark-green;
+    box-shadow: 0 0 40px 40px $dark-green inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.cards-button:focus{
+    outline: 0;
+}
+.cards-button:hover{
+    box-shadow: 0 0 10px 0 $dark-green inset, 0 0 10px 4px $dark-green;
+  }
+

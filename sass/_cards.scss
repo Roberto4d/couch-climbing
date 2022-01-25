@@ -1,9 +1,30 @@
 //varibles
+
 @use 'global' as *;
 
+//titulo cards
+.home-walls {
+    display: flex;
+    padding-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .home-wall{
+        color: $white;
+        font-size: 65px;
+        font-family: $font-button;
+    }
+    .sub-title-hw {
+        color: $light-green;
+        font-family: $font-title;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}
+//Carts with carrousel
 .cards{
-
-    .card{ 
+    margin-bottom: 10%;
+    .card{
         margin-left: 30px;
         border-radius: 8px;
         border: none;
@@ -11,7 +32,7 @@
         .carousel-inner{
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            max-height: 300px;
+            max-height: 320px;
         }
         .card-body{
             display: flex;

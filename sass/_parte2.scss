@@ -1,0 +1,15 @@
+//varibles
+@use 'global' as *;
+
+/* parte dos lema */
+.lema {
+  display: flex;
+  justify-content: center;
+  margin: 20%;
+  .lema1{
+    font-size: 40px;
+    color: $light-green;
+    font-family: $font-button;
+    text-align: center;
+  }
+}

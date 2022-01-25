@@ -1,0 +1,31 @@
+//varibles
+
+@use 'global' as *;
+
+.footer{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    .ft {
+        img{
+            max-width: 200px;
+        }
+
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
+        .all-rights{
+            p{
+                font-family: $font-title;
+                color: $white;
+            }
+        }
+    }
+}

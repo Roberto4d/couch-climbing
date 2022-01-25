@@ -1,0 +1,39 @@
+//varibles
+@use 'global' as *;
+
+// Tercera parte grid
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+    margin: 10%;
+    .caracteristicas-contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        background-color: $green;
+        transition: 0.3s;
+        h4{
+            font-size: 30px;
+            color: $light-green;
+            font-family: $font-button;
+        }
+        .caracteristicas-contenido-imagen{
+            margin-top: 10%;
+        }
+        .parte3{
+            font-size: 20px;
+            margin:  10%;
+            font-family: $font-title;
+            text-align: center;
+            color: $white;
+        }
+    }
+    :hover{
+        background-color: $dark-green;
+    }
+}

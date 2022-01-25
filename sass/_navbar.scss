@@ -1,0 +1,51 @@
+//varibles
+
+@use 'global' as *;
+
+.navbar-climbing{
+    .container-fluid{
+//logo
+        .navbar{
+            img{
+                max-width: 200px;
+            }
+        }
+//Menu
+        ul{ 
+            padding: 15px;
+            li{
+                .nav-link{
+                    color: $white;
+                    font-size: 18px;
+                    padding: 10px;
+                }
+            }
+
+        }
+//buttons
+        .d-flex {
+            //button sign in
+            div{
+                .sign-in{
+                    font-size: 18px;
+                    color: $light-green;
+                    background-color: transparent;
+                    border-color: transparent;
+                    text-decoration: underline;
+                }
+            }
+            //button sign in
+            .btn-outline-success {
+                color: $dark-green ;
+                background-color: $light-green;
+                font-family: $font-button;
+                font-size: 18px;
+                margin-right: 30px;
+                padding: 5px 40px;
+                border-radius: 8px;
+             }
+        }
+    }
+}
+
+

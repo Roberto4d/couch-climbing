@@ -1,4 +1,48 @@
 //varibles
 @use 'global' as *;
+
+//nav bar
+@use 'navbar' as *;
+
+//buttons
+@use 'buttons' as *;
+
+//Primera parte
+@use 'parte1' as *;
+
+//Segunda parte
+@use 'parte2' as *;
+
+//Tercera parte
+@use 'parte3' as *;
+
 //cartas
 @use 'cards' as *;
+
+//Call to action
+
+@use 'cta' as *;
+
+//Footer
+
+@use 'footer' as *;
+
+$breakpoints: (
+    sm : 425px,
+    md : 768px,
+    lg : 1440px,
+    xl : 1955px,
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+body {
+    background-color: $dark-green;
+    margin:0;
+    font-family: $font-title;
+}
+
