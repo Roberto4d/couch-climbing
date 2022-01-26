@@ -90,10 +90,10 @@
                 font-size: 50px;
             }
             @include for-desktop-up{
-                font-size: 65px;
+                font-size: 55px;
             }
             @include for-desktop-up{
-                font-size: 70px;
+                font-size: 60px;
             }
         }
         h4 {
@@ -105,13 +105,13 @@
                 font-size: 20px;
              }
              @include for-tablet-portrait-up{
+                font-size: 25px;
+            }
+            @include for-desktop-up{
                 font-size: 30px;
             }
             @include for-desktop-up{
-                font-size: 45px;
-            }
-            @include for-desktop-up{
-                font-size: 50px;
+                font-size: 35px;
             }
         }
     }

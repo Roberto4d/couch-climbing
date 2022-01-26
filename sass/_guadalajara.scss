@@ -1,0 +1,74 @@
+//varibles
+@use 'global' as *;
+.gdl-guadalajara{
+    .guadalajara-titulo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding-top: 10%;
+        align-items: center;
+        h1{
+            font-size: 60px;
+            font-family: $font-button;
+            color: $white;
+        }
+    }
+    .gdl-par{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        p{
+            font-size: 25px;
+            font-family: $font-title;
+            color: $light-green;
+        }
+    }
+    .gdl-muros {
+        .back-yards {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            align-items: center;
+            .nombre-muro {
+                font-family: $font-button;
+                color: $white;
+                font-size: 60px;
+            }
+            p{
+                font-family: $font-title;
+                color: $light-green;
+                font-size: 25px;
+            }
+            .contactar{
+                h3{
+                    font-family: $font-title;
+                    color: $light-green;
+                }
+            }
+        }
+        .the-crimp-maker{
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            align-items: center;
+            .nombre-muro {
+                font-family: $font-button;
+                color: $white;
+                font-size: 60px;
+            }
+            p{
+                font-family: $font-title;
+                color: $light-green;
+                font-size: 25px;
+            }
+            .contactar{
+                h3{
+                    font-family: $font-title;
+                    color: $light-green;
+                }
+            }
+        }
+    }
+}
+

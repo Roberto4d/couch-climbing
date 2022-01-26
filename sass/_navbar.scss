@@ -25,15 +25,16 @@
 //buttons
         .d-flex {
             //button sign in
-            div{
-                .sign-in{
-                    font-size: 18px;
-                    color: $light-green;
-                    background-color: transparent;
-                    border-color: transparent;
-                    text-decoration: underline;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .sign-in{
+                font-size: 18px;
+                color: $light-green;
+                background-color: transparent;
+                border-color: transparent;
+                text-decoration: underline;
                 }
-            }
             //button sign in
             .btn-outline-success {
                 color: $dark-green ;
