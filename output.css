@@ -528,68 +528,86 @@
   font-size: 13px;
 }
 
+.gdl-guadalajara {
+  display: grid;
+  margin-top: 9%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 .gdl-guadalajara .guadalajara-titulo {
   display: flex;
+  padding: 5%;
   flex-direction: column;
-  margin-top: 10%;
-  padding-top: 10%;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 .gdl-guadalajara .guadalajara-titulo h1 {
   font-size: 60px;
   font-family: "Staatliches", cursive;
   color: #fff;
 }
-.gdl-guadalajara .gdl-par {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-}
-.gdl-guadalajara .gdl-par p {
-  font-size: 25px;
-  font-family: "DM Sans", sans-serif;
-  color: #E0FE9C;
-}
-.gdl-guadalajara .gdl-muros .back-yards {
-  display: flex;
-  flex-direction: column;
-  padding: 5%;
-  align-items: center;
-}
-.gdl-guadalajara .gdl-muros .back-yards .nombre-muro {
+.gdl-guadalajara .guadalajara-titulo p {
+  font-size: 30px;
   font-family: "Staatliches", cursive;
-  color: #fff;
-  font-size: 60px;
-}
-.gdl-guadalajara .gdl-muros .back-yards p {
-  font-family: "DM Sans", sans-serif;
-  color: #E0FE9C;
-  font-size: 25px;
-}
-.gdl-guadalajara .gdl-muros .back-yards .contactar h3 {
-  font-family: "DM Sans", sans-serif;
   color: #E0FE9C;
 }
-.gdl-guadalajara .gdl-muros .the-crimp-maker {
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 1.5%;
+  background-color: #E0FE9C;
+}
+.title h2 {
+  font-size: 40px;
+  color: #0E3B43;
+  font-family: "Staatliches", cursive;
+}
+
+.gdl-muros {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 5%;
+}
+.gdl-muros .video1 {
+  display: block;
+}
+.gdl-muros .back-yards {
   display: flex;
   flex-direction: column;
   padding: 5%;
   align-items: center;
 }
-.gdl-guadalajara .gdl-muros .the-crimp-maker .nombre-muro {
-  font-family: "Staatliches", cursive;
-  color: #fff;
-  font-size: 60px;
-}
-.gdl-guadalajara .gdl-muros .the-crimp-maker p {
-  font-family: "DM Sans", sans-serif;
-  color: #E0FE9C;
+.gdl-muros .back-yards h2 {
   font-size: 25px;
+  color: #fff;
+  font-family: "Staatliches", cursive;
 }
-.gdl-guadalajara .gdl-muros .the-crimp-maker .contactar h3 {
+.gdl-muros .back-yards p {
   font-family: "DM Sans", sans-serif;
   color: #E0FE9C;
+  font-size: 18px;
+}
+.gdl-muros .contactar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.gdl-muros .contactar h3 {
+  font-family: "DM Sans", sans-serif;
+  color: #E0FE9C;
+}
+
+.ver-boulders {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
 }
 
 body {
